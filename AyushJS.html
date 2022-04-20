@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function msg(){
+            let x= document.getElementById('name').value
+            let y= document.getElementById('phone').value
+            let z= document.getElementById('email').value
+            if(x.toString() == ""){
+                alert("please Enter name")
+            }
+            else if(y.toString() == ""){
+                alert("Phone number is required")
+            }
+            else if(z.toString() == ""){
+                alert("Email number is required")
+            }
+            else{
+                alert("Successfully Submitted")
+                // document.body.style.backgroundColor = "#FF0000";
+                document.body.style.backgroundImage = "url('https://cdn.images.express.co.uk/img/dynamic/39/590x/Game-of-Thrones-White-Walker-theory-1233486.webp?r=1579995873278')";
+            }
+
+        
+        
+        }
+    </script>   
+    <title>JS test</title>
+</head>
+<body>
+    <form name="myform" id="formid"  >
+      Name:   <input type="text" name="name" id="name"><br/><br/>
+      phone:   <input type="text" name="phone" id="phone"><br/><br/>
+      email:   <input type="text" name="email" id="email"><br/><br/>
+      <button type="button" onclick="msg()">Submit</button>
+    </form>
+</body>
+</html>
